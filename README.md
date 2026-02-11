@@ -2,6 +2,8 @@
 
 A portable LaTeX resume builder.
 
+![Resume Preview](resume.png)
+
 ## Prerequisites
 
 - [Nix](https://nixos.org/download/) with flakes enabled
@@ -49,6 +51,14 @@ Watch for changes and rebuild automatically:
 ```sh
 make watch
 ```
+
+Generate a PNG preview (for the README):
+
+```sh
+make preview
+```
+
+This creates `resume.png` from the PDF using `pdftoppm`. Commit the PNG to display it in the README on GitHub.
 
 Clean build artifacts:
 

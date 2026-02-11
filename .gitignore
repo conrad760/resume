@@ -8,6 +8,7 @@
 
 # Build output
 *.pdf
+!resume.png
 
 # Secrets
 .env

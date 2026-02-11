@@ -48,6 +48,9 @@
             # Optional: for live preview
             entr # File watcher
 
+            # PDF to PNG conversion
+            poppler-utils # pdftoppm
+
             # Version control
             git
           ]
@@ -59,6 +62,7 @@
             echo "Commands available:"
             echo "  make          - Build PDF"
             echo "  make watch    - Auto-rebuild on changes"
+            echo "  make preview  - Generate PNG preview"
             echo "  make clean    - Clean auxiliary files"
           '';
         };

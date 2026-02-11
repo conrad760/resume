@@ -1,0 +1,19 @@
+# LaTeX build artifacts
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+
+# Build output
+*.pdf
+
+# Secrets
+.env
+
+# direnv
+.direnv/
+
+# Nix
+result

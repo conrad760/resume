@@ -1,0 +1,176 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+\usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Conrad Parker} \\ \vspace{1pt}
+    \small PHONE\_NUMBER $|$ \href{mailto:conradlparker@gmail.com}{\underline{conradlparker@gmail.com}} $|$
+    \href{https://linkedin.com/in/conrad-parker/}{\underline{linkedin.com/in/conrad-parker/}} $|$
+    \href{https://github.com/conrad760}{\underline{github.com/conrad760}}
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {LikeToKnowIt - LTK}{Sep 2022 -- Feb 2026}
+      {Senior Software Engineer I (2025) $|$ Influencer Marketing Platform}{Remote -- Denver, CO}
+      \resumeItemListStart
+        \resumeItem{\textbf{Built a URL fingerprinting system} that attributed creator and campaign data to hydrated redirect URLs, directly securing a multimillion-dollar client contract by countering attribution theft from browser extensions}
+        \resumeItem{\textbf{Introduced Temporal} for workflow orchestration in newer services, improving reliability and visibility into long-running distributed processes}
+        \resumeItem{\textbf{Led observability improvements across core services} using DataDog, OpenTelemetry, and runbooks that reduced incident response time and reliance on individual SMEs}
+      \resumeItemListEnd
+
+    \resumeSubheading
+          {LikeToKnowIt - LTK}{}
+      {Software Engineer II $|$ Influencer Marketing Platform}{}
+      \resumeItemListStart
+        \resumeItem{\textbf{Built backend services and designed database schema} for LTK's first-ever influencer marketplace, enabling thousands of creator campaigns and generating a new revenue stream}
+        \resumeItem{\textbf{Awarded Bar Raiser and Hackathon Winner (LTKLens 2023)} for innovative solutions and exceptional team contributions}
+      \resumeItemListEnd
+    \resumeSubheading
+      {SouthSpire}{Feb 2022 -- Sep 2022}
+      {Senior Software Engineer $|$ Consulting Project}{Remote -- Houston, TX}
+      \resumeItemListStart
+        \resumeItem{\textbf{Engineered a cost-effective AWS pipeline} using on-demand container scaling, CDN integration, and compression, cutting operational costs by an estimated 90\%}
+        \resumeItem{\textbf{Automated the optimization of dozens of outdated dynamic websites} through page caching and image compression, achieving an 80\% improvement in load speed}
+        \resumeItem{\textbf{Built tooling for ephemeral development environments}, removing a bottleneck and enabling teams of developers to maintain and update sites efficiently}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {GetLatka}{May 2020 -- Feb 2022}
+      {Main Developer $|$ SaaS Data Insights Startup}{Remote -- Houston, TX}
+      \resumeItemListStart
+        \resumeItem{\textbf{Led all front-end and back-end development}, directly contributing to over \$250K in profit in a 3 person startup}
+        \resumeItem{\textbf{Optimized SaaS data ingestion processes}, improving data accuracy and reducing processing time by 25\%}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Home Lab} $|$ \emph{NixOS, K3s, ArgoCD, Grafana, Loki, Tempo, Prometheus}}{2018 -- Present}
+          \resumeItemListStart
+            \resumeItem{Multi-node NixOS home lab running a 3-node K3s cluster with ArgoCD for GitOps deployments, Grafana/Loki/Tempo/Prometheus for monitoring, internal TLS certificates, and VPS failover for external resiliency}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Wedding Website} $|$ \emph{TypeScript, React, Golang, Vite} $|$ \href{https://parker-rimmer.com}{\underline{parker-rimmer.com}}}{2025 -- Present}
+          \resumeItemListStart
+            \resumeItem{Full-stack wedding website with a React/Vite frontend and Go backend APIs, self-hosted on home infrastructure with VPS redundancy, featuring PWA support and web vitals monitoring}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Houston}{Houston, TX}
+      {Bachelor of Science in Computer Science}{Aug. 2016 -- May 2020}
+  \resumeSubHeadingListEnd
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Expertise}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Golang, TypeScript, Python, Bash, SQL (MySQL, PostgreSQL)} \\
+     \textbf{Infrastructure \& Tools}{: AWS (CloudFormation, Aurora, Lambda), NixOS, Docker, Kubernetes, ArgoCD, Grafana, DataDog} \\
+     \textbf{Developer Workflow}{: Git, Make, Neovim, Linux}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
